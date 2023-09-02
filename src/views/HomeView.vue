@@ -1,11 +1,13 @@
 <script setup>
   import Item from '@/components/Item.vue';
+  import Cart from '@/components/Cart.vue';
 </script>
 
 <template>
   <main>
+    <cart :show="true"/>
     <div class="product-container">
-      <Item />
+      <item />
     </div>
     <i class="fa-solid fa-basket-shopping"></i>
     <i class="fa-solid fa-droplet"></i>
