@@ -1,4 +1,5 @@
 <script setup>
+  import LaMaisonJungle from '@/components/LaMaisonJungle.vue';
 </script>
 
 <template>
