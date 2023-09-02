@@ -5,6 +5,7 @@
 
 <template>
   <header class="header">
+    <button>Basket</button>
     <h1 class="title">La maison jungle</h1>
     <nav class="nav-menu">
       <RouterLink to="/">Shop</RouterLink>
@@ -25,7 +26,7 @@
     width: 100%;
     padding: 8px 16px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 
