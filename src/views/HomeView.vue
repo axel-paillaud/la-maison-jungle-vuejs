@@ -8,6 +8,9 @@
       <Item />
     </div>
     <i class="fa-solid fa-basket-shopping"></i>
+    <i class="fa-solid fa-droplet"></i>
+    <i class="fa-solid fa-sun"></i>
+
   </main>
 </template>
 

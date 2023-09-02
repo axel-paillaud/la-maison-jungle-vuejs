@@ -5,7 +5,7 @@
 
 <template>
   <header class="header">
-    <button>Basket</button>
+    <button class="cart-button"><i class="fa-solid fa-basket-shopping"></i>Cart</button>
     <h1 class="title">La maison jungle</h1>
     <nav class="nav-menu">
       <RouterLink to="/">Shop</RouterLink>
@@ -39,5 +39,12 @@
   .nav-menu a {
     color: white;
     text-decoration: none;
+  }
+
+  .cart-button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 8px 16px;
   }
 </style>
