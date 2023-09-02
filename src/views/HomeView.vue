@@ -1,9 +1,10 @@
 <script setup>
-  import LaMaisonJungle from '@/components/LaMaisonJungle.vue';
+  import Item from '@/components/Item.vue';
 </script>
 
 <template>
   <main>
-    <p>Hello, world !</p>
+    <Item />
+    <p>hello !</p>
   </main>
 </template>
