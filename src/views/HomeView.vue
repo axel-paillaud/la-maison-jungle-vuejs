@@ -1,11 +1,9 @@
 <script setup>
   import Item from '@/components/Item.vue';
-  import Cart from '@/components/Cart.vue';
 </script>
 
 <template>
   <main>
-    <cart :show="true"/>
     <div class="product-container">
       <item />
     </div>

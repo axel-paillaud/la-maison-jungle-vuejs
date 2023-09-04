@@ -1,17 +1,25 @@
 <script setup>
-  import HomeView from '@/views/HomeView.vue';
   import {RouterLink, RouterView} from 'vue-router';
+  import { ref } from 'vue';
+  import Cart from '@/components/Cart.vue';
+
+  const cartIsOpen = ref(true);
+
+  function toggleCart() {
+    cartIsOpen.value = !cartIsOpen.value;
+  }
 </script>
 
 <template>
   <header class="header">
-    <button class="cart-button"><i class="fa-solid fa-basket-shopping"></i>Cart</button>
+    <button class="cart-button" @click="toggleCart"><i class="fa-solid fa-basket-shopping"></i>Cart</button>
     <h1 class="title">La maison jungle</h1>
     <nav class="nav-menu">
       <RouterLink to="/">Shop</RouterLink>
       <RouterLink to="/about">About</RouterLink>
     </nav>
   </header>
+  <Cart :cartIsOpen="cartIsOpen"/>
   <RouterView />
 
 </template>
