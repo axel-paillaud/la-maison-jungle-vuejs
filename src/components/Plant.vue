@@ -1,5 +1,11 @@
 <script setup>
-
+  defineProps({
+    imageUrl: String,
+    plantName: String,
+    water: Number,
+    sun: Number,
+    price: Number,
+  })
 </script>
 
 <template>

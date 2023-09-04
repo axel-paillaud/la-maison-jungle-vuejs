@@ -15,5 +15,6 @@
   .product-container {
     display: flex;
     justify-content: center;
+    padding: 64px;
   }
 </style>

@@ -3,7 +3,7 @@
   import { ref } from 'vue';
   import Cart from '@/components/Cart.vue';
 
-  const cartIsOpen = ref(true);
+  const cartIsOpen = ref(false);
 
   function toggleCart() {
     cartIsOpen.value = !cartIsOpen.value;

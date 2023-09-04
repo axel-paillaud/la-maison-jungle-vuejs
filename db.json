@@ -4,54 +4,81 @@
       "name": "monstera",
       "category": "classique",
       "id": "1ed",
+      "price": 12,
+      "water": 1,
+      "sun": 2,
       "url_image": "https://webshop.plnts.com/media/catalog/product/cache/aa5d334f459227518b6c3cf7ea9d29ed/p/l/pl.xxl.002_-_monstera_pertusum-vierkant.jpg"
     },
     {
       "name": "ficus lyrata",
       "category": "classique",
       "id": "2ab",
+      "price": 8,
+      "water": 2,
+      "sun": 1,
       "url_image": "https://webshop.plnts.com/media/catalog/product/cache/aa5d334f459227518b6c3cf7ea9d29ed/p/l/pl.xl.006_-_ficus_lyrata-vierkant.jpg"
     },
     {
       "name": "pothos argenté",
       "category": "classique",
       "id": "3sd",
+      "price": 32,
+      "water": 3,
+      "sun": 3,
       "url_image": "https://lawilderie.com/wp-content/uploads/2022/02/20201113_093229-2-scaled-2.jpg"
     },
     {
       "name": "yucca",
       "category": "classique",
       "id": "4kk",
+      "price": 24,
+      "water": 1,
+      "sun": 3,
       "url_image": "https://flowy.fr/cdn/shop/products/YuccaContexte_1200x1200.jpg?v=1651679389"
     },
     {
       "name": "olivier",
       "category": "extérieur",
       "id": "5pl",
+      "price": 7,
+      "water": 1,
+      "sun": 2,
       "url_image": "https://cdnm.westwing.com/image/upload/v1/contenthub/app/uploads/fr/2022/02/23141828/olivier_2.jpg"
     },
     {
       "name": "géranium",
       "category": "extérieur",
       "id": "6uo",
+      "price": 36,
+      "water": 3,
+      "sun": 3,
       "url_image": "https://d31ucaydsf5avx.cloudfront.net/10742-large_default/geranium-rose-artificiel.jpg"
     },
     {
       "name": "basilique",
       "category": "extérieur",
       "id": "7ie",
+      "price": 4,
+      "water": 1,
+      "sun": 2,
       "url_image": "https://www.deco.fr/sites/default/files/styles/article_970x500/public/2019-09/shutterstock_1101534992_0.jpg?itok=O5BoBpwO"
     },
     {
       "name": "aloe",
       "category": "plante grasse",
       "id": "8fp",
+      "price": 15,
+      "water": 1,
+      "sun": 1,
       "url_image": "https://medias.maisonsdumonde.com/images/ar_1:1,c_pad,f_auto,q_auto,w_732/v1/mkp/M21089075_2/aloe-vera-cache-pot-plante-d-interieur-facile-d-entretien.jpg"
     },
     {
       "name": "succulente",
       "category": "plante grasse",
       "id": "9vn",
+      "price": 54,
+      "water": 1,
+      "sun": 1,
       "url_image": "https://medias.interflora.fr/fstrz/r/s/c/medias.interflora.fr/medias/B5SUC-GALLERY-0-3.jpg?context=bWFzdGVyfGltYWdlc3wxMDA1NTZ8aW1hZ2UvanBlZ3xpbWFnZXMvaDlkL2gwYS85NDQxOTk3NzgzMDcwLmpwZ3wwZGFkMGY0MTAzNTUyODc2YzMwNTU4NDc5YjFlNjJjOGEyNGRkYWU1M2Y2NmM5MzY4MTI2MzQ0MzNmNWU5N2Y1"
 	  }
   ]
