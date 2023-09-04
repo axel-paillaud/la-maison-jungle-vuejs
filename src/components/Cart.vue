@@ -19,7 +19,7 @@
     position: absolute;
     background-color: khaki;
     padding: 64px;
-    height: 100%;
+    height: calc(100% - 64px);
     display: flex;
     flex-direction: column;
     gap: 16px;
