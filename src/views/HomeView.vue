@@ -1,11 +1,11 @@
 <script setup>
-  import Item from '@/components/Item.vue';
+  import Plant from '@/components/Plant.vue';
 </script>
 
 <template>
   <main>
     <div class="product-container">
-      <item />
+      <Plant />
     </div>
 
   </main>
