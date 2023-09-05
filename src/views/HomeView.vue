@@ -21,7 +21,9 @@
 <template>
   <main class="main">
     <div class="product-container">
-      <Plant />
+      <Plant 
+        imageUrl="plantList[0].imageUrl"
+      />
     </div>
 
   </main>
