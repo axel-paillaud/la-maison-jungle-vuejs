@@ -1,11 +1,14 @@
 <script setup>
-  defineProps({
+
+  const props = defineProps({
     imageUrl: String,
     plantName: String,
-    water: Number,
-    sun: Number,
+    waters: Number,
+    suns: Number,
     price: Number,
+    id: String,
   })
+
 </script>
 
 <template>
@@ -13,34 +16,28 @@
       <div class="plant-image-description">
         <div class="plant-image">
           <img 
-            src="https://webshop.plnts.com/media/catalog/product/cache/aa5d334f459227518b6c3cf7ea9d29ed/p/l/pl.xl.006_-_ficus_lyrata-vierkant.jpg" 
+            :src="imageUrl"
             alt="ficus lyrata"
             width="256"
             height="256"
           >
         </div>
         <div class="plant-description">
-          <h3 class="plant-name">ficus lyrata</h3>
+          <h3 class="plant-name">{{ plantName }}</h3>
 
           <!-- Water icons -->
           <div class="water-icons">
-            <i class="fa-solid fa-droplet"></i>
-            <i class="fa-solid fa-droplet"></i>
-            <i class="fa-solid fa-droplet"></i>
+            <i v-for="(water, index) in waters" :key="index" class="fa-solid fa-droplet"></i>
           </div>
 
           <!-- Light icons -->
           <div class="sun-icons">
-            <i class="fa-solid fa-sun"></i>
-            <i class="fa-solid fa-sun"></i>
-            <i class="fa-solid fa-sun"></i>
+            <i v-for="(sun, index) in suns" :key="index" class="fa-solid fa-sun"></i>
           </div>
 
           <!-- Price and Add to Cart button -->
-          <div class="price-add-cart">
-            <strong class="price">28 €</strong>
-            <button class="cart-button">Add to Cart<i class="fa-solid fa-basket-shopping"></i></button>
-          </div>
+          <strong class="price">{{ price }} €</strong>
+          <button class="cart-button" @click="$emit('addPlant', props)">Add to Cart<i class="fa-solid fa-basket-shopping"></i></button>
         </div>
       </div>
     </div>
@@ -86,19 +83,13 @@
   color: rgb(179, 128, 20);
 }
 
-.price-add-cart {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
 .price {
   font-size: 24px;
 }
 .cart-button {
   display: flex;
   gap: 8px;
-  padding: 16px;
+  padding: 8px 16px;
   align-items: center;
   cursor: pointer;
 }

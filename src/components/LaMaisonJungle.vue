@@ -1,13 +1,23 @@
 <script setup>
-  import {RouterLink, RouterView} from 'vue-router';
-  import { ref } from 'vue';
-  import Cart from '@/components/Cart.vue';
+import {RouterLink, RouterView} from 'vue-router';
+import { ref, reactive } from 'vue';
+import Cart from '@/components/Cart.vue';
 
-  const cartIsOpen = ref(false);
+const cartIsOpen = ref(false);
 
-  function toggleCart() {
-    cartIsOpen.value = !cartIsOpen.value;
-  }
+function toggleCart() {
+  cartIsOpen.value = !cartIsOpen.value;
+}
+
+function showCart() {
+  console.log(cartList);
+}
+
+</script>
+
+<script>
+let lists = [];
+export const cartList = ref(lists);
 </script>
 
 <template>
@@ -18,8 +28,9 @@
       <RouterLink to="/">Shop</RouterLink>
       <RouterLink to="/about">About</RouterLink>
     </nav>
+    <button @click="showCart">click</button>
   </header>
-  <Cart :cartIsOpen="cartIsOpen"/>
+  <Cart :cartList="cartList" :cartIsOpen="cartIsOpen"/>
   <RouterView />
 
 </template>
