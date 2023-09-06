@@ -8,6 +8,6 @@
   .about {
     display: flex;
     justify-content: center;
-    margin-top: 64px;
+    padding-top: 64px;
   }
 </style>

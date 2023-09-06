@@ -71,6 +71,11 @@
   height: 256px;
   width: 256px;
 }
+
+.plant-image img {
+  object-fit: cover;
+}
+
 .water-icons {
   display: flex;
   gap: 8px;

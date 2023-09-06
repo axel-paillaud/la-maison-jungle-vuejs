@@ -42,7 +42,13 @@ const total = computed(() => {
 <template>
   <aside v-if="cartIsOpen" class="cart">
     <p v-for="plant in computedPlantList" class="cart-item">
-      {{ plant.quantity }} x {{ plant.name }}<span>{{ plant.price }} €</span>
+      {{ plant.quantity }} x 
+      <span class="plant-name">
+        {{ plant.name }}
+      </span>
+      <span>
+        {{ plant.price }} €
+      </span>
     </p>
     <p class="cart-item cart-total">total<b>{{ total }} €</b></p>
   </aside>
@@ -50,19 +56,26 @@ const total = computed(() => {
 
 <style scoped>
   .cart {
-    position: absolute;
+    position: fixed;
     background-color: khaki;
-    padding: 64px;
-    height: calc(100% - 64px);
+    padding: 128px 64px 64px 64px;
+    width: 380px;
     display: flex;
     flex-direction: column;
     gap: 16px;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
   }
 
   .cart-item {
     display: flex;
     justify-content: space-between;
     gap: 32px;
+  }
+
+  .plant-name {
+    text-transform: capitalize;
   }
 
   .cart-total {

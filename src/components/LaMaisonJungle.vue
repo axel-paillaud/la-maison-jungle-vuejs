@@ -9,10 +9,6 @@ function toggleCart() {
   cartIsOpen.value = !cartIsOpen.value;
 }
 
-function showCart() {
-  console.log(cartList);
-}
-
 </script>
 
 <script>
@@ -28,7 +24,6 @@ export const cartList = ref(lists);
       <RouterLink to="/">Shop</RouterLink>
       <RouterLink to="/about">About</RouterLink>
     </nav>
-    <button @click="showCart">click</button>
   </header>
   <Cart :cartList="cartList" :cartIsOpen="cartIsOpen"/>
   <RouterView />
@@ -41,6 +36,8 @@ export const cartList = ref(lists);
     font-weight: bold;
   }
   .header {
+    position: fixed;
+    z-index: 20;
     background-color: green;
     width: 100%;
     padding: 8px 16px;
